@@ -300,3 +300,36 @@ exercises.c:123:12: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 827f611
+Thu 21 Mar 2024 05:33:57 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:109:3: error: implicit declaration of function ‘iniciarPila’ [-Werror=implicit-function-declaration]
+  109 |   iniciarPila(&stack,get_size(cadena));
+      |   ^~~~~~~~~~~
+exercises.c:109:31: error: passing argument 1 of ‘get_size’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  109 |   iniciarPila(&stack,get_size(cadena));
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:35:20: note: expected ‘List *’ but argument is of type ‘char *’
+   35 | int get_size(List *L);
+      |              ~~~~~~^
+In file included from test.c:5:
+exercises.c:118:11: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  118 |       if (is_empty(stack)){
+      |           ^~~~~~~~
+exercises.c:123:27: error: too few arguments to function ‘pushFront’
+  123 |       char top = *((char*)pushFront(stack));
+      |                           ^~~~~~~~~
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:17:6: note: declared here
+   17 | void pushFront(List *L, void *dato);
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a6a0822
