@@ -226,3 +226,13 @@ arraylist.h:14:18: note: expected ‘List *’ but argument is of type ‘int *�
 cc1: all warnings being treated as errors
 Compilation failed
 98475e8
+Thu 21 Mar 2024 04:48:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:73:30: error: invalid use of incomplete typedef ‘List’
+   73 |       suma += *((int*)current->data);
+      |                              ^~
+Compilation failed
+3ac3b0f

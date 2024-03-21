@@ -65,7 +65,7 @@ int sumaLista(List *L) {
 
   int largo = get_size(L);
 
-  Node *current = first(L);
+  List* current = first(L);
 
 
   for (int i = 0; i < largo; i++) {
