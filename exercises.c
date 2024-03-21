@@ -69,8 +69,8 @@ int sumaLista(List *L) {
 
     suma += *(int*)first(L);
 
-    
-
+    next(List *L);
+  
   return suma;
 }
 
