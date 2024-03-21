@@ -65,11 +65,15 @@ int sumaLista(List *L) {
 
   int largo = get_size(L);
 
-  for (int i = 0; i < largo; i++)
+  Node *current = first(L);
 
-    suma += *(int*)first(L);
 
-    next(List *L);
+  for (int i = 0; i < largo; i++) {
+
+      suma += *((int*)current->data);
+
+      current = next(current);
+  }
   
   return suma;
 }

@@ -202,3 +202,27 @@ exercises.c:72:10: error: expected expression before ‘List’
 cc1: all warnings being treated as errors
 Compilation failed
 d1be560
+Thu 21 Mar 2024 04:48:24 PM UTC: 
+ exercises.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:3: error: unknown type name ‘Node’
+   68 |   Node *current = first(L);
+      |   ^~~~
+exercises.c:73:30: error: request for member ‘data’ in something not a structure or union
+   73 |       suma += *((int*)current->data);
+      |                              ^~
+exercises.c:75:22: error: passing argument 1 of ‘next’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   75 |       current = next(current);
+      |                      ^~~~~~~
+      |                      |
+      |                      int *
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:14:18: note: expected ‘List *’ but argument is of type ‘int *’
+   14 | void* next(List *L);
+      |            ~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+98475e8
