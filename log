@@ -276,3 +276,27 @@ Thu 21 Mar 2024 04:54:58 PM UTC:
  tests:  1|4
 total_score: 10/70
 f7c22cb
+Thu 21 Mar 2024 05:31:19 PM UTC: 
+ exercises.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:109:3: error: implicit declaration of function ‘iniciarPila’ [-Werror=implicit-function-declaration]
+  109 |   iniciarPila(&stack,strLen(cadena));
+      |   ^~~~~~~~~~~
+exercises.c:109:22: error: implicit declaration of function ‘strLen’; did you mean ‘strlen’? [-Werror=implicit-function-declaration]
+  109 |   iniciarPila(&stack,strLen(cadena));
+      |                      ^~~~~~
+      |                      strlen
+exercises.c:118:11: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  118 |       if (is_empty(stack)){
+      |           ^~~~~~~~
+exercises.c:123:27: error: called object ‘top’ is not a function or function pointer
+  123 |       char top = *((char*)top(stack));
+      |                           ^~~
+exercises.c:123:12: note: declared here
+  123 |       char top = *((char*)top(stack));
+      |            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+827f611
