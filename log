@@ -147,3 +147,13 @@ exercises.c:70:21: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 5a70b2c
+Thu 21 Mar 2024 02:54:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:70:18: error: subscripted value is neither array nor pointer nor vector
+   70 |     suma += largo[i];
+      |                  ^
+Compilation failed
+82299fe
