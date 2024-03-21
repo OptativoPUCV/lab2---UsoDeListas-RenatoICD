@@ -82,12 +82,12 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-  Node* current = L->head;
-  Node* prev = NULL;
+  List* current = L->head;
+  List* prev = NULL;
 
   while (current != NULL) {
       if (current->data == elem) {
-          Node* temp = current;
+        List* temp = current;
           if (prev == NULL) { // Si el nodo a eliminar es el primer nodo
               L->head = current->next;
               current = current->next;

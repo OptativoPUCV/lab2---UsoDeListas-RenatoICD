@@ -388,3 +388,37 @@ exercises.c:101:28: error: request for member ‘next’ in something not a stru
       |                            ^~
 Compilation failed
 1007625
+Thu 21 Mar 2024 07:01:16 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:85:20: error: invalid use of incomplete typedef ‘List’
+   85 |   List* current = L->head;
+      |                    ^~
+exercises.c:89:18: error: invalid use of incomplete typedef ‘List’
+   89 |       if (current->data == elem) {
+      |                  ^~
+exercises.c:92:16: error: invalid use of incomplete typedef ‘List’
+   92 |               L->head = current->next;
+      |                ^~
+exercises.c:92:32: error: invalid use of incomplete typedef ‘List’
+   92 |               L->head = current->next;
+      |                                ^~
+exercises.c:93:32: error: invalid use of incomplete typedef ‘List’
+   93 |               current = current->next;
+      |                                ^~
+exercises.c:95:19: error: invalid use of incomplete typedef ‘List’
+   95 |               prev->next = current->next;
+      |                   ^~
+exercises.c:95:35: error: invalid use of incomplete typedef ‘List’
+   95 |               prev->next = current->next;
+      |                                   ^~
+exercises.c:96:32: error: invalid use of incomplete typedef ‘List’
+   96 |               current = current->next;
+      |                                ^~
+exercises.c:101:28: error: invalid use of incomplete typedef ‘List’
+  101 |           current = current->next;
+      |                            ^~
+Compilation failed
+efaa672
