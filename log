@@ -1,0 +1,11 @@
+Thu 21 Mar 2024 02:45:21 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:52:14: error: ‘lista’ undeclared (first use in this function)
+   52 |     pushBack(lista, valor);
+      |              ^~~~~
+exercises.c:52:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+149c893
