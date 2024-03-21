@@ -345,3 +345,46 @@ Thu 21 Mar 2024 05:52:44 PM UTC:
  tests:  1|4
 total_score: 10/70
 d98dc18
+Thu 21 Mar 2024 07:00:57 PM UTC: 
+ exercises.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:85:3: error: unknown type name ‘Node’
+   85 |   Node* current = L->head;
+      |   ^~~~
+exercises.c:85:20: error: invalid use of incomplete typedef ‘List’
+   85 |   Node* current = L->head;
+      |                    ^~
+exercises.c:86:3: error: unknown type name ‘Node’
+   86 |   Node* prev = NULL;
+      |   ^~~~
+exercises.c:89:18: error: request for member ‘data’ in something not a structure or union
+   89 |       if (current->data == elem) {
+      |                  ^~
+exercises.c:90:11: error: unknown type name ‘Node’
+   90 |           Node* temp = current;
+      |           ^~~~
+exercises.c:92:16: error: invalid use of incomplete typedef ‘List’
+   92 |               L->head = current->next;
+      |                ^~
+exercises.c:92:32: error: request for member ‘next’ in something not a structure or union
+   92 |               L->head = current->next;
+      |                                ^~
+exercises.c:93:32: error: request for member ‘next’ in something not a structure or union
+   93 |               current = current->next;
+      |                                ^~
+exercises.c:95:19: error: request for member ‘next’ in something not a structure or union
+   95 |               prev->next = current->next;
+      |                   ^~
+exercises.c:95:35: error: request for member ‘next’ in something not a structure or union
+   95 |               prev->next = current->next;
+      |                                   ^~
+exercises.c:96:32: error: request for member ‘next’ in something not a structure or union
+   96 |               current = current->next;
+      |                                ^~
+exercises.c:101:28: error: request for member ‘next’ in something not a structure or union
+  101 |           current = current->next;
+      |                            ^~
+Compilation failed
+1007625
