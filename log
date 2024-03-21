@@ -333,3 +333,9 @@ arraylist.h:17:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 a6a0822
+Thu 21 Mar 2024 05:52:05 PM UTC: 
+ exercises.c | 24 ------------------------
+ 1 file changed, 24 deletions(-)
+ tests:  1|4
+total_score: 10/70
+bc865a3
