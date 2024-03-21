@@ -270,3 +270,9 @@ exercises.c:66:7: error: unused variable ‘largo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c9d489a
+Thu 21 Mar 2024 04:54:58 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  1|4
+total_score: 10/70
+f7c22cb

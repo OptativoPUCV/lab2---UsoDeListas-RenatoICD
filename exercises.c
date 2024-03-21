@@ -65,7 +65,9 @@ int sumaLista(List *L) {
 
   int largo = get_size(L);
 
+  for (int i = 0; i < largo; i++)
 
+    suma += *(int*)first(L);
   
   return suma;
 }
