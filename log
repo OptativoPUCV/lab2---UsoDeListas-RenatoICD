@@ -236,3 +236,21 @@ exercises.c:73:30: error: invalid use of incomplete typedef ‘List’
       |                              ^~
 Compilation failed
 3ac3b0f
+Thu 21 Mar 2024 04:53:57 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:72:30: error: expected ‘)’ before ‘;’ token
+   72 |       suma += *((int*)next(L);
+      |                ~             ^
+      |                              )
+exercises.c:72:31: error: expected ‘;’ before ‘}’ token
+   72 |       suma += *((int*)next(L);
+      |                               ^
+      |                               ;
+......
+   75 |   }
+      |   ~                            
+Compilation failed
+4592ef1
