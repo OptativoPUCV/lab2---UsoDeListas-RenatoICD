@@ -59,3 +59,16 @@ exercises.c:68:13: error: ‘l’ undeclared (first use in this function)
 exercises.c:68:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a85a053
+Thu 21 Mar 2024 02:47:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:14: error: invalid use of undefined type ‘struct List’
+   68 |     suma += L[i];
+      |              ^
+exercises.c:68:13: error: invalid use of incomplete typedef ‘List’
+   68 |     suma += L[i];
+      |             ^
+Compilation failed
+1d93426

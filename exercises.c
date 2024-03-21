@@ -65,7 +65,7 @@ int sumaLista(List *L) {
 
   for (int i = 0; i < sizeof(L); i++)
 
-    suma += l[i];
+    suma += L[i];
   
    return suma;
 }
