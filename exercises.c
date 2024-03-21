@@ -62,12 +62,15 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
 
   int suma = 0;
-
-  for (int i = 0; i < sizeof(L); i++)
-
-    suma += L[i];
   
-   return suma;
+  List *temp = L;
+
+  while (temp != NULL) {
+      suma += temp->data; 
+      temp = temp->next; 
+  }
+
+  return suma;
 }
 
 /*
