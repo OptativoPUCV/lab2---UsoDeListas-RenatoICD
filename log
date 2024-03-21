@@ -157,3 +157,13 @@ exercises.c:70:18: error: subscripted value is neither array nor pointer nor vec
       |                  ^
 Compilation failed
 82299fe
+Thu 21 Mar 2024 02:55:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:70:18: error: subscripted value is neither array nor pointer nor vector
+   70 |     suma += largo[i];
+      |                  ^
+Compilation failed
+9fb915c
