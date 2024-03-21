@@ -33,3 +33,18 @@ exercises.c:68:14: error: cast to pointer from integer of different size [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 13ddd65
+Thu 21 Mar 2024 02:47:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:20: error: implicit declaration of function ‘get’; did you mean ‘getw’? [-Werror=implicit-function-declaration]
+   68 |     suma += *(int*)get(L, i);
+      |                    ^~~
+      |                    getw
+exercises.c:68:14: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   68 |     suma += *(int*)get(L, i);
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+94d4994
