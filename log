@@ -650,3 +650,33 @@ Fri 22 Mar 2024 01:27:39 AM UTC:
  tests:  2|3
 total_score: 20/70
 7462c4b
+Fri 22 Mar 2024 01:51:50 AM UTC: 
+ exercises.c | 37 ++++++++++++++++++-------------------
+ 1 file changed, 18 insertions(+), 19 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:9: error: storage size of ‘aux’ isn’t known
+  100 |   Stack aux;
+      |         ^~~
+exercises.c:105:24: error: ‘P1’ is a pointer; did you mean to use ‘->’?
+  105 |       int elemento = P1.top();
+      |                        ^
+      |                        ->
+exercises.c:106:9: error: ‘P1’ is a pointer; did you mean to use ‘->’?
+  106 |       P1.pop();
+      |         ^
+      |         ->
+exercises.c:113:9: error: ‘P1’ is a pointer; did you mean to use ‘->’?
+  113 |       P1.push(elemento); // Devolvemos los elementos a P1
+      |         ^
+      |         ->
+exercises.c:114:9: error: ‘P2’ is a pointer; did you mean to use ‘->’?
+  114 |       P2.push(elemento); // Copiamos los elementos a P2
+      |         ^
+      |         ->
+exercises.c:100:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+  100 |   Stack aux;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+f73f651

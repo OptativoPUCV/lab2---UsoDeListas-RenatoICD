@@ -70,6 +70,7 @@ int sumaLista(List *L) {
     suma += *(int*)actual;
 
     actual = next(L);
+  
   }
   return suma;
 }
@@ -84,25 +85,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-  // List* current = L->head;
-  // List* prev = NULL;
-
-  // while (current != NULL) {
-  //     if (current->data == elem) {
-  //       List* temp = current;
-  //         if (prev == NULL) { // Si el nodo a eliminar es el primer nodo
-  //             L->head = current->next;
-  //             current = current->next;
-  //         } else {
-  //             prev->next = current->next;
-  //             current = current->next;
-  //         }
-  //         free(temp);
-  //     } else {
-  //         prev = current;
-  //         current = current->next;
-  //     }
-  // }
+  
 }
 
 /*
@@ -113,6 +96,23 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+
+  Stack aux;
+
+  // Copiamos los elementos de P1 a aux y P2
+  
+  while (P1 != NULL) {
+      int elemento = P1.top();
+      P1.pop();
+      aux.push(elemento);
+  }
+
+  while (P1 != NULL) {
+      int elemento = aux.top();
+      aux.pop();
+      P1.push(elemento); // Devolvemos los elementos a P1
+      P2.push(elemento); // Copiamos los elementos a P2
+  }
 }
 
 /*
