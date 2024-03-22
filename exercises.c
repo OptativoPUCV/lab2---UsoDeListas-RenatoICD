@@ -69,7 +69,7 @@ int sumaLista(List *L) {
   for (int i = 0; i < largo; i++)
 
     suma += *(int*)first(L);
-    next(List *L)
+    next(List *L);
   
   return suma;
 }
