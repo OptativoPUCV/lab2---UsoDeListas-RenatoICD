@@ -84,25 +84,25 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-  List* current = L->head;
-  List* prev = NULL;
+  // List* current = L->head;
+  // List* prev = NULL;
 
-  while (current != NULL) {
-      if (current->data == elem) {
-        List* temp = current;
-          if (prev == NULL) { // Si el nodo a eliminar es el primer nodo
-              L->head = current->next;
-              current = current->next;
-          } else {
-              prev->next = current->next;
-              current = current->next;
-          }
-          free(temp);
-      } else {
-          prev = current;
-          current = current->next;
-      }
-  }
+  // while (current != NULL) {
+  //     if (current->data == elem) {
+  //       List* temp = current;
+  //         if (prev == NULL) { // Si el nodo a eliminar es el primer nodo
+  //             L->head = current->next;
+  //             current = current->next;
+  //         } else {
+  //             prev->next = current->next;
+  //             current = current->next;
+  //         }
+  //         free(temp);
+  //     } else {
+  //         prev = current;
+  //         current = current->next;
+  //     }
+  // }
 }
 
 /*

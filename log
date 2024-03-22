@@ -569,3 +569,20 @@ exercises.c:103:28: error: invalid use of incomplete typedef ‘List’
 cc1: all warnings being treated as errors
 Compilation failed
 0014e75
+Fri 22 Mar 2024 01:20:55 AM UTC: 
+ exercises.c | 38 +++++++++++++++++++-------------------
+ 1 file changed, 19 insertions(+), 19 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   69 |   for (int i = 0; i < largo; i++)
+      |   ^~~
+exercises.c:72:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   72 |     next(List *L);
+      |     ^~~~
+exercises.c:72:10: error: expected expression before ‘List’
+   72 |     next(List *L);
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+122cd86
