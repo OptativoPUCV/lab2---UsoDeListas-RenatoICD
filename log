@@ -608,3 +608,25 @@ exercises.c:72:13: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 ca2aad4
+Fri 22 Mar 2024 01:22:09 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:70:5: error: expected expression before ‘int’
+   70 |     int* valor = *(int*)first(L);
+      |     ^~~
+exercises.c:68:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   68 |   for (int i = 0; i < largo; i++)
+      |   ^~~
+exercises.c:72:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   72 |     suma += valor;
+      |     ^~~~
+exercises.c:72:13: error: ‘valor’ undeclared (first use in this function); did you mean ‘valloc’?
+   72 |     suma += valor;
+      |             ^~~~~
+      |             valloc
+exercises.c:72:13: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+8bbd3ee

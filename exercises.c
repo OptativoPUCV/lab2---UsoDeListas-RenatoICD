@@ -67,7 +67,7 @@ int sumaLista(List *L) {
   
   for (int i = 0; i < largo; i++)
 
-    int valor = *(int*)first(L);
+    int* valor = *(int*)first(L);
 
     suma += valor;
 
