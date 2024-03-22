@@ -65,9 +65,12 @@ int sumaLista(List *L) {
 
   int largo = get_size(L);
 
+  List *temp = first(l);
+
   for (int i = 0; i < largo; i++)
 
-    suma += i;
+    suma += *(int*)temp;
+    temp = next(L);
   
   return suma;
 }

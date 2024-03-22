@@ -422,3 +422,49 @@ exercises.c:101:28: error: invalid use of incomplete typedef ‘List’
       |                            ^~
 Compilation failed
 efaa672
+Fri 22 Mar 2024 01:19:31 AM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:22: error: ‘l’ undeclared (first use in this function)
+   68 |   List *temp = first(l);
+      |                      ^
+exercises.c:68:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:70:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   70 |   for (int i = 0; i < largo; i++)
+      |   ^~~
+exercises.c:73:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   73 |     temp = next(L);
+      |     ^~~~
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:88:20: error: invalid use of incomplete typedef ‘List’
+   88 |   List* current = L->head;
+      |                    ^~
+exercises.c:92:18: error: invalid use of incomplete typedef ‘List’
+   92 |       if (current->data == elem) {
+      |                  ^~
+exercises.c:95:16: error: invalid use of incomplete typedef ‘List’
+   95 |               L->head = current->next;
+      |                ^~
+exercises.c:95:32: error: invalid use of incomplete typedef ‘List’
+   95 |               L->head = current->next;
+      |                                ^~
+exercises.c:96:32: error: invalid use of incomplete typedef ‘List’
+   96 |               current = current->next;
+      |                                ^~
+exercises.c:98:19: error: invalid use of incomplete typedef ‘List’
+   98 |               prev->next = current->next;
+      |                   ^~
+exercises.c:98:35: error: invalid use of incomplete typedef ‘List’
+   98 |               prev->next = current->next;
+      |                                   ^~
+exercises.c:99:32: error: invalid use of incomplete typedef ‘List’
+   99 |               current = current->next;
+      |                                ^~
+exercises.c:104:28: error: invalid use of incomplete typedef ‘List’
+  104 |           current = current->next;
+      |                            ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1f2b8be
