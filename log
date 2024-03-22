@@ -630,3 +630,17 @@ exercises.c:72:13: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 8bbd3ee
+Fri 22 Mar 2024 01:27:30 AM UTC: 
+ exercises.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:21: error: comparison between pointer and integer [-Werror]
+   68 |   for (int i = 0; i < get_size; i++) {
+      |                     ^
+exercises.c:66:7: error: unused variable ‘largo’ [-Werror=unused-variable]
+   66 |   int largo = get_size(L);
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1bdcef

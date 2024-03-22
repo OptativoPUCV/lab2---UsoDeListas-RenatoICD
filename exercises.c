@@ -64,16 +64,13 @@ int sumaLista(List *L) {
   int suma = 0;
 
   int largo = get_size(L);
-  
-  for (int i = 0; i < largo; i++)
-
-    int* valor = *(int*)first(L);
-
-    suma += valor;
-
-    valor = *(int*)next(L);
+  List *actual = first(L);
+  for (int i = 0; i < get_size; i++) {
     
-  
+    suma += *(int*)actual;
+
+    actual = next(L);
+  }
   return suma;
 }
 
